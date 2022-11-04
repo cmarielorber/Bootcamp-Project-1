@@ -1,0 +1,9 @@
+img{
+    width: 100%;
+    height: 250px;
+}
+
+#carouselExampleCaptions{
+    background-color: black;
+    padding: 5px;
+}
