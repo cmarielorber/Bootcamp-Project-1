@@ -5,35 +5,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SoCal Brew Hopper </title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+  <title>SoCal Brew Hopper</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/cs/style.css"/>
+  <link rel="stylesheet" href="./assets/cs/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="navbar bg-light fixed-top">
+  <nav id="navBarid" class="navbar bg-dark fixed-top" style="background-color: #0000">
     <!-- left side nav bar w/ logo and title -->
-    <div class="container-fluid" style="background-color: #7092be;">
+    <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="./assets/images/randomlogo.png" alt="Logo" width="100" height="100"
+        <img id="logoimg" src="./assets/images/So-CAL Logo.png" alt="SoCal Brew Logo" width="150" height="150"
           class="d-inline-block align-text-center">So-Cal Brew Hopper
       </a>
       <!-- right side with toggle : start button   -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-    <!-- bucket list side opened -->
+      <!-- bucket list side opened -->
       <aside class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <!-- side bucketlist header -->
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Bucket List</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-      <!-- side bucket list body// Table for bucketlist -->
+        <!-- side bucket list body// Table for bucketlist -->
         <div class="container card col-sm-12">
-          <img src="https://th.bing.com/th/id/OIP.s21N6dx1luJ998AuG2xEcAAAAA?w=175&h=180&c=7&r=0&o=5&pid=1.7"class="card-img-top" alt="...">
+          <img src="https://th.bing.com/th/id/OIP.s21N6dx1luJ998AuG2xEcAAAAA?w=175&h=180&c=7&r=0&o=5&pid=1.7"
+            class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">??Description: Create Bucket List??</h5>
             <p class="card-text">??Description: Add/Remove??</p>
@@ -48,7 +52,7 @@
             <a href="#" class="card-link">??Link Option??</a>
           </div>
         </div>
-      </aside>    
+      </aside>
     </div>
   </nav>
   
@@ -56,16 +60,17 @@
     <div class="">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
         <div class="carousel-indicators">
-          <button id= "carouselBtn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button id= "carouselBtn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          <button id="carouselBtn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+            class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button id="carouselBtn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
             aria-label="Slide 2"></button>
-          <button id= "carouselBtn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          <button id="carouselBtn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://picsum.photos/300/900" style="height: 500px" class="d-block w-100" alt="...">
+            <img id="carouselimg" src="https://picsum.photos/300/900" style="height: 500px" class="d-block w-100"
+              alt="...">
             <!-- took d-none out -->
             <div class="carousel-caption d-md-block">
               <h5>First slide label</h5>
@@ -73,14 +78,16 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://picsum.photos/300/900" style="height: 500px" class="d-block w-100" alt="...">
+            <img id="carouselimg" src="https://picsum.photos/300/900" style="height: 500px" class="d-block w-100"
+              alt="...">
             <div class="carousel-caption d-md-block">
               <h5>Second slide label</h5>
               <p>Some representative placeholder content for the second slide.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://picsum.photos/300/900" style="height: 500px" class="d-block w-100" alt="...">
+            <img id="carouselimg" src="https://picsum.photos/300/900" style="height: 500px" class="d-block w-100"
+              alt="...">
             <div class="carousel-caption d-md-block">
               <h5>Third slide label</h5>
               <p>Some representative placeholder content for the third slide.</p>
@@ -88,12 +95,12 @@
           </div>
         </div>
       </div>
-      <button id ="carouselLeft" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+      <button id="carouselLeft" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
         data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button id ="carouselRight" class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+      <button id="carouselRight" class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
         data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
@@ -103,21 +110,28 @@
 
     <!-- Cards -->
     <article id="searchBrew" class="row">
-    <card class="col-sm-12">
-      <section class="row mb-2">
-        <div class="col-md-12">
-          <!-- inside card -->
-          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-flex justify-content-center mb-2 text-primary">SCBHopper</strong>
-              <h3 class="d-flex justify-content-center mb-0">SEARCH AREA</h3>
-              <div class="d-flex justify-content-center mb-1 text-muted">simple describe option </div>
-              <p class="d-flex justify-content-center card-text mb-auto"> additional content.</p>
-            <!-- Search Bar   -->
-              <form class="d-flex justify-content-center mt-3" role="search">
-               <input class="form-control me-2" type="search" style= "width: 50%" placeholder="???Search???" aria-label="Search" />
-               <button id="searchBrewBtn" class="btn btn-outline-success" type="submit">Search</button>
-              </form>
+      <card class="col-sm-12">
+        <section class="row mb-2">
+          <div class="col-md-12">
+            <!-- inside card -->
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong id="nearYou" class="d-flex justify-content-center mb-2">Brew Near You</strong>
+                <h3 class="d-flex justify-content-center mb-0"></h3>
+                <div id="searchinfo" class="d-flex justify-content-center mb-1 text-muted"></div>
+                <p id="searchinfo"
+                  class="d-flex justify-content-center card-text mb-auto text-muted align-items-center">SoCal
+                  destinations with the
+                  click of the
+                  button.</p>
+                <!-- Search Bar   -->
+                <form class="d-flex justify-content-center mt-3" role="search">
+                  <input class="form-control me-2 text-center" type="search" style="width: 50%"
+                    placeholder="Brew & Grub" aria-label="Search" />
+                  <button id="searchBrewbtn" class="btn btn-outline-light text-center justify-content-center"
+                    type="submit">Brew Me</button>
+                </form>
+              </div>
             </div>
           </div>
         </section>
@@ -133,37 +147,42 @@
           <th scope="col">Category</th>
         </tr>
       </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Value</td>
-            <td>Value</td>
-            <td>Value</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Value</td>
-            <td>Value</td>
-            <td>Value</td>
-          </tr>
-        </tbody>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Value</td>
+          <td>Value</td>
+          <td>Value</td>
+        </tr>
+      </tbody>
     </table>
-  </main> 
+  </main>
 
-    <!-- Modal -->
-  <modal class="modal fade" id="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <!-- Modal -->
+  <modal class="modal fade" id="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content bg-dark text-light text-center">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">So-Cal Brew Hopper</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel">So-Cal Brew Hopper</h1>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Disclaimer: Must be 21 years of age or older to drink alcohol. Don't be bad kids 
+          Disclaimer: Must be 21 years of age or older to drink alcohol. Don't be bad kids
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" style="background-color: green;" data-bs-dismiss="modal">I'm older, Understood</button>
-          <button type="button" class="btn btn-primary" style="background-color: Red;" data-bs-dismiss="modal">I'm younger, just looking</button>
+          <button type="button" class="btn btn-secondary" style="background-color: slategray"
+            data-bs-dismiss="modal">I'm
+            older, understood</button>
+          <button type="button" class="btn btn-secondary" style="background-color: var(--brew);"
+            data-bs-dismiss="modal">I'm
+            younger, just looking</button>
         </div>
       </div>
     </div>
@@ -177,4 +196,5 @@
   
 
 </body>
+
 </html>

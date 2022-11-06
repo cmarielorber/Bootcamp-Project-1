@@ -1,9 +1,58 @@
-img{
-    width: 100%;
-    height: 250px;
+:root {
+    --brew: #b79b67;
+    --black: #000000;
+    --white: #ffffff;
+    --offwhite: #F0EFEC;
+    --slate: #76736D;
+    --lightgray: #aca8a8;
+
 }
 
-#carouselExampleCaptions{
-    background-color: black;
-    padding: 5px;
+.navbar-brand {
+    font-family: 'Special Elite', cursive;
+    font-size: 80px;
+    color: var(--brew);
+}
+
+#navBarid {
+    font-family: 'Special Elite', cursive;
+
+}
+
+#logoimg {
+    size: 150px;
+    color: var(--brew);
+    border-radius: 100px
+}
+
+#carouselimg {
+    width: 100%;
+    height: 600px;
+}
+
+#searchBrew {
+    background-color: var(--black);
+}
+
+#searchBrewbtn {
+    font-family: 'Special Elite', cursive;
+    ;
+}
+
+#nearYou {
+    font-family: 'Special Elite', cursive;
+    ;
+    font-size: xx-large;
+    color: var(--brew)
+}
+
+#searchinfo {
+    font-family: 'Special Elite', cursive;
+    ;
+    font-size: 25px;
+}
+
+#modal {
+    font-family: 'Special Elite', cursive;
+    ;
 }
