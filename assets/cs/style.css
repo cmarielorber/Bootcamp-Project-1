@@ -12,6 +12,10 @@ body{
     font-family: 'Special Elite', cursive;
 }
 
+.offcanvas-header{
+    color: var(--brew)
+}
+
 .navbar-brand {
     font-size: 80px;
     color: var(--brew);
