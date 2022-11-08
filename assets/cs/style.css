@@ -8,9 +8,17 @@
 
 }
 
-body{
+.navbar-brand {
     font-family: 'Special Elite', cursive;
+    font-size: 50px;
+    color: var(--brew);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
+
 
 .offcanvas-header{
     color: var(--brew)
@@ -19,11 +27,13 @@ body{
 .navbar-brand {
     font-size: 80px;
     color: var(--brew);
+    border-bottom: solid 4px var(--brew);
 }
 
 #logoimg {
     size: 150px;
     color: var(--brew);
+    border-radius: 100px;
 }
 
 #carouselimg {
@@ -35,15 +45,25 @@ body{
     background-color: var(--black);
 }
 
+#searchBrewbtn {
+    font-family: 'Special Elite', cursive;
+    ;
+}
+
 #nearYou {
+    font-family: 'Special Elite', cursive;
+    ;
     font-size: xx-large;
-    color: var(--brew);
+    color: var(--brew)
 }
 
 #searchinfo {
+    font-family: 'Special Elite', cursive;
+    ;
     font-size: 25px;
 }
- 
-#tableBrew{
-    background-color: var(--black);
+
+#modal {
+    font-family: 'Special Elite', cursive;
+    ;
 }
