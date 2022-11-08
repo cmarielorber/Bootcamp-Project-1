@@ -14,15 +14,15 @@
     color: var(--brew);
 }
 
-#navBarid {
+#navBarid,
+#searchBrewbtn,
+#modal {
     font-family: 'Special Elite', cursive;
-
 }
 
 #logoimg {
     size: 150px;
     color: var(--brew);
-    border-radius: 100px
 }
 
 #carouselimg {
@@ -34,25 +34,21 @@
     background-color: var(--black);
 }
 
-#searchBrewbtn {
-    font-family: 'Special Elite', cursive;
-    ;
-}
-
 #nearYou {
     font-family: 'Special Elite', cursive;
-    ;
     font-size: xx-large;
-    color: var(--brew)
+    color: var(--brew);
 }
 
-#searchinfo {
+#searchinfo,
+.offcanvas-header {
     font-family: 'Special Elite', cursive;
-    ;
-    font-size: 25px;
+    color: var(--brew);
 }
+
 
 #modal {
     font-family: 'Special Elite', cursive;
     ;
 }
+
