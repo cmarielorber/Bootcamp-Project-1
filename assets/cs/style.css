@@ -8,16 +8,13 @@
 
 }
 
-.navbar-brand {
+body{
     font-family: 'Special Elite', cursive;
-    font-size: 80px;
-    color: var(--brew);
 }
 
-#navBarid,
-#searchBrewbtn,
-#modal {
-    font-family: 'Special Elite', cursive;
+.navbar-brand {
+    font-size: 80px;
+    color: var(--brew);
 }
 
 #logoimg {
@@ -35,20 +32,14 @@
 }
 
 #nearYou {
-    font-family: 'Special Elite', cursive;
     font-size: xx-large;
     color: var(--brew);
 }
 
-#searchinfo,
-.offcanvas-header {
-    font-family: 'Special Elite', cursive;
-    color: var(--brew);
+#searchinfo {
+    font-size: 25px;
 }
-
-
-#modal {
-    font-family: 'Special Elite', cursive;
-    ;
+ 
+#tableBrew{
+    background-color: var(--black);
 }
-
