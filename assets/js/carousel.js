@@ -37,7 +37,6 @@ function getdata() {
     fetch("https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?categories=breweries&location=san diego", requestOptions)
         .then(response => response.json())
         .then(result => {
-            console.log("result//////",result);
             getRandombrew(result.businesses);
         })
         .catch(error => console.log('error', error));
@@ -59,6 +58,9 @@ function displaycar(randbusinesses){
     carouselimg1.setAttribute('src',randbusinesses[0].image_url);
     carouselimg2.setAttribute('src',randbusinesses[1].image_url);
     carouselimg3.setAttribute('src',randbusinesses[2].image_url);
+    carouselimg1.parentElement.setAttribute('href', randbusinesses[0].url);
+    carouselimg2.parentElement.setAttribute('href', randbusinesses[1].url);
+    carouselimg3.parentElement.setAttribute('href', randbusinesses[2].url);
     carimg1caption.textContent = randbusinesses[0].name;
     carimg2caption.textContent = randbusinesses[1].name;
     carimg3caption.textContent = randbusinesses[2].name;
