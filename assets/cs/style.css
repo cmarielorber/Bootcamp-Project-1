@@ -8,6 +8,10 @@
 
 }
 
+body {
+    font-family: 'Special Elite', cursive;
+}
+
 .navbar-brand {
     font-family: 'Special Elite', cursive;
     font-size: 50px;
@@ -52,7 +56,6 @@
 
 #nearYou {
     font-family: 'Special Elite', cursive;
-    ;
     font-size: xx-large;
     color: var(--brew)
 }
