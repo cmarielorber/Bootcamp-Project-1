@@ -24,6 +24,7 @@ const addBrewery = function (name) {
 
 
 const searchBrewery = function () {
+  document.getElementById("tableBrew").setAttribute("class", "table");
   let searchTerm = document.getElementById("usrSearch").value;
   console.log(searchTerm)
 
