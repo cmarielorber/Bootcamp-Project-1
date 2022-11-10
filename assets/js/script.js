@@ -1,3 +1,6 @@
+$(window).on('load', function() {
+  $('#modal').modal('show');
+});
 
 const addBrewery = function (name) {
   //target the brew list "ul"
