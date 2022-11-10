@@ -43,7 +43,7 @@
             <h5 class="card-title">Check your bucketlist</h5>
             <p class="card-text"></p>
           </div>
-          <ul class="list-group list-group-flush">
+          <ul class="list-group list-group-flush" id="brew-list">
             <li class="list-group-item">Isaac Brew <button>X</button></li>
             <li class="list-group-item">Christen Brew<button>X</button></li>
             <li class="list-group-item">Louis Brew<button>X</button></li>
@@ -123,7 +123,7 @@
                   <input id="usrLocation" class="form-control me-2 text-center" type="search" style="width: 50%"
                     placeholder="City/Zipcode" aria-label="Search"/>
                   <button id="searchBrewbtn" class="btn btn-outline-light text-center justify-content-center"
-                    type="submit">Brew Me</button>
+                  onclick="searchBrewery()" type="button">Brew Me</button>
                 </form>
               </div>
             </div>
@@ -141,7 +141,7 @@
           <th scope="col">Category</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="brew-table-body">
         <tr>
           <th scope="row">1</th>
           <td>Value</td>
