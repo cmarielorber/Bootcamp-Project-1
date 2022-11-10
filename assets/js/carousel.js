@@ -44,13 +44,12 @@ function getdata() {
 getdata()
 
 function getRandombrew(businesses){
-    const ranbusinesses= []
+    const ranbusinesses= [];
     for (let i=0; i < 3; i++) {
         const ranIndex= Math.floor(Math.random()*businesses.length);
         const ranbusiness = businesses [ranIndex];
         ranbusinesses.push(ranbusiness);
     };
-    console.log(ranbusinesses);
     displaycar(ranbusinesses);
 }
 
@@ -64,9 +63,9 @@ function displaycar(randbusinesses){
     carimg1caption.textContent = randbusinesses[0].name;
     carimg2caption.textContent = randbusinesses[1].name;
     carimg3caption.textContent = randbusinesses[2].name;
-    car1address.textContent = randbusinesses [0].location.display_address;
-    car2address.textContent = randbusinesses [1].location.display_address;
-    car3address.textContent = randbusinesses [2].location.display_address;
+    car1address.textContent = randbusinesses [0].location.display_address.join(", ");
+    car2address.textContent = randbusinesses [1].location.display_address.join(", ");
+    car3address.textContent = randbusinesses [2].location.display_address.join(", ");
 
 }
 
