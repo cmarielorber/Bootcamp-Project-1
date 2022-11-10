@@ -13,9 +13,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bucket"
+    viewBox="0 0 16 16">
+    <path
+      d="M2.522 5H2a.5.5 0 0 0-.494.574l1.372 9.149A1.5 1.5 0 0 0 4.36 16h7.278a1.5 1.5 0 0 0 1.483-1.277l1.373-9.149A.5.5 0 0 0 14 5h-.522A5.5 5.5 0 0 0 2.522 5zm1.005 0a4.5 4.5 0 0 1 8.945 0H3.527zm9.892 1-1.286 8.574a.5.5 0 0 1-.494.426H4.36a.5.5 0 0 1-.494-.426L2.58 6h10.838z" />
+  </svg>
 </head>
 
-<body class="bg-dark">
+<body class="bg-dark d-flex flex-column">
   <nav id="navBarid" class="navbar bg-dark fixed-top" style="background-color: #0000">
     <!-- left side nav bar w/ logo and title -->
     <div class="container-fluid">
@@ -39,15 +44,11 @@
         <!-- side bucket list body// Table for bucketlist -->
         <div class="container card col-sm-12 bg-dark">
           <img src="./assets/images/So-CAL Logo.png" class="card-img-top rounded-circle mt-3 mb-3" alt="...">
-          <div class="card-body bg-light rounded-top">
-            <h5 class="card-title">Check your bucketlist</h5>
+          <div class="card-body bg-light rounded  ">
+            <h5 class="card-title">Your bucketlist</h5>
             <p class="card-text"></p>
+            <ul class="list-group list-group-flush" id="brew-list"></ul>
           </div>
-          <ul class="list-group list-group-flush" id="brew-list">
-            <li class="list-group-item">Isaac Brew <button>X</button></li>
-            <li class="list-group-item">Christen Brew<button>X</button></li>
-            <li class="list-group-item">Louis Brew<button>X</button></li>
-          </ul>
           <!-- <div class="card-body bg-light rounded-bottom">
             <a href="#" class="card-link">??Link Option??</a>
             <a href="#" class="card-link">??Link Option??</a>
@@ -72,7 +73,8 @@
           <div class="carousel-item active">
             <a href="#" target="_blank">
               <img id="carouselimg1" src="" style="height: 500px; object-fit: cover;" class="d-block w-100">
-              <div class="carousel-caption d-md-block" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 0.5em;">
+              <div class="carousel-caption d-md-block"
+                style="background-color: rgba(0, 0, 0, 0.5); border-radius: 0.5em;">
                 <h5 id="carimg1caption"></h5>
                 <p id="car1address"></p>
               </div>
@@ -81,7 +83,8 @@
           <div class="carousel-item">
             <a href="#" target="_blank">
               <img id="carouselimg2" src="" style="height: 500px; object-fit: cover;" class="d-block w-100">
-              <div class="carousel-caption d-md-block" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 0.5em;">
+              <div class="carousel-caption d-md-block"
+                style="background-color: rgba(0, 0, 0, 0.5); border-radius: 0.5em;">
                 <h5 id="carimg2caption"></h5>
                 <p id="car2address"></p>
               </div>
@@ -90,7 +93,8 @@
           <div class="carousel-item">
             <a href="#" target="_blank">
               <img id="carouselimg3" style="height: 500px; object-fit: cover;" class="d-block w-100">
-              <div class="carousel-caption d-md-block" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 0.5em;">
+              <div class="carousel-caption d-md-block"
+                style="background-color: rgba(0, 0, 0, 0.5); border-radius: 0.5em;">
                 <h5 id="carimg3caption"></h5>
                 <p id="car3address"></p>
               </div>
@@ -99,40 +103,38 @@
         </div>
       </div>
     </div>
-    </figure>
+
 
     <!-- Cards -->
-    <article id="searchBrew" class="row">
-      <card class="col-sm-12">
-        <section class="row mb-2">
-          <div class="col-md-12">
-            <!-- inside card -->
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-              <div class="col p-4 d-flex flex-column position-static">
-                <strong id="nearYou" class="d-flex justify-content-center mb-2">Brew Near You</strong>
-                <h3 class="d-flex justify-content-center mb-0"></h3>
-                <div id="searchinfo" class="d-flex justify-content-center mb-1 text-muted"></div>
-                <p id="searchinfo"
-                  class="d-flex justify-content-center card-text mb-auto text-muted align-items-center">
-                  SoCal destinations with the click of a button.
-                </p>
-                <!-- Search Bar   -->
-                <form class="d-flex justify-content-center mt-3" role="search">
-                  <input id="usrSearch" class="form-control me-2 text-center" type="search" style="width: 50%"
-                    placeholder="Brewery Name (Optional)" aria-label="Search"/>
-                  <input id="usrLocation" class="form-control me-2 text-center" type="search" style="width: 50%"
-                    placeholder="City/Zipcode" aria-label="Search"/>
-                  <button id="searchBrewbtn" class="btn btn-outline-light text-center justify-content-center"
+    <article id="searchBrew">
+      <card class="border-top col-sm-12 d-flex justify-content-center">
+        <div class="col-md-10">
+          <!-- inside card -->
+          <div
+            class="mt-3 row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong id="nearYou" class="d-flex justify-content-center mb-2">Brew Near You</strong>
+              <h3 class="d-flex justify-content-center mb-0"></h3>
+              <div id="searchinfo" class="d-flex justify-content-center mb-1 text-muted"></div>
+              <p id="searchinfo" class="d-flex justify-content-center card-text mb-auto text-muted align-items-center">
+                SoCal destinations with the click of a button.
+              </p>
+              <!-- Search Bar   -->
+              <form class="d-flex justify-content-center mt-3" role="search">
+                <input id="usrSearch" class="form-control me-2 text-center" type="search" style="width: 50%"
+                  placeholder="Brewery Name (Optional)" aria-label="Search" />
+                <input id="usrLocation" class="form-control me-2 text-center" type="search" style="width: 50%"
+                  placeholder="City/Zipcode" aria-label="Search" />
+                <button id="searchBrewbtn" class="btn btn-outline-light text-center justify-content-center"
                   onclick="searchBrewery()" type="button">Brew Me</button>
-                </form>
-              </div>
+              </form>
             </div>
           </div>
-        </section>
+        </div>
       </card>
     </article>
 
-    <table id="tableBrew" class="table d-none" style="background-color: #a1a1a1;">
+    <table id="tableBrew" class="table d-none mb-0" style="background-color: #000; color: #fff; margin-bottom: 0;">
       <thead>
         <tr>
           <th scope="col">Brewery Name</th>
@@ -142,7 +144,25 @@
       </thead>
       <tbody id="brew-table-body"></tbody>
     </table>
+
+    <article style="background-color: #000; color: #fff; padding-top: 16px;">
+      <div class="container pb-4">
+        <h4 class="d-flex flex-column align-items-center">Staying in instead? Why not try the recipe below?</h4>
+        <h4 class="d-flex flex-column align-items-center" style="text-decoration: underline;">Cocktail Recipe of the Day</h4>
+        <section class="d-flex flex-column align-items-center" id="dailyRecipe"></section>
+      </div>
+      
+    </article>
+
+    <footer>
+      <a class="border-top d-flex justify-content-center" href="#" style="text-decoration: none;  
+        color: #b79b67; padding-top: 16px;">
+        <h5>About this page</h5>
+      </a>
+    </footer>
+
   </main>
+
 
   <!-- Modal -->
   <modal class="modal fade" id="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
@@ -175,6 +195,7 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
   <script src="./assets/js/carousel.js"></script>
+  <script src="./assets/js/cocktail.js"></script>
   <script src="./assets/js/script.js"></script>
 
 
