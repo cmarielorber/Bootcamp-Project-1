@@ -12,7 +12,7 @@ We present, So-Cal Brew Hopper. brew Hopper is an interactive tool that allows o
 
 ![isaacagonzalez github io_Bootcamp-Project-1_ open shot](https://user-images.githubusercontent.com/109984761/201198742-559e3884-6b99-41bd-b279-6ca82264025c.png)
 
-![isaacagonzalez github io_Bootcamp-Project-1_ bucketlist](https://user-images.githubusercontent.com/109984761/201263078-73738eac-4235-4583-b68d-1b46315dff8d.png)
+![isaacagonzalez github io_Bootcamp-Project-1_ bucket](https://user-images.githubusercontent.com/109984761/201271252-250f29ff-ad42-4969-ad60-7fd3734dac4a.png)
 
 
 ## User Instruction:
