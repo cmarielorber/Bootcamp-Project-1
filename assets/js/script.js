@@ -126,11 +126,11 @@ const searchBrewery = function () {
           brewRow.appendChild(brewPhone);
 
           let brewURL = document.createElement("td");
-          document.createElement("a");
-          var link = document.createTextNode("Link");
-          brewURL.appendChild(link);
-          brewURL.title = "Link";
-          brewURL.href = business.url
+          let brewLink = document.createElement("a");
+          brewLink.setAttribute("href", business.url);
+          brewLink.setAttribute("target", "_blank");
+          brewLink.appendChild(document.createTextNode("Link"));
+          brewURL.appendChild(brewLink);
           brewRow.appendChild(brewURL);
         
           //IMPORTANT PART
