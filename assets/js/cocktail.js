@@ -32,9 +32,16 @@ function publishRecipe(input) {
   `;
   let template = ``;
   for (let i = 0; i < ingredientValues.length; i++) {
-    template += `
-      <p>${measurementValues[i] + " " + ingredientValues[i]}</p>
-    `;
+    if (measurementValues[i] === undefined) {
+      template += `
+        <p>${ingredientValues[i]}</p>
+      `;
+    } else {
+      template += `
+        <p>${measurementValues[i] + " " + ingredientValues[i]}</p>
+      `;
+    }
+
   }
   ingredientsDiv.innerHTML = template;
   instructionsDiv.innerHTML = `
