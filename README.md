@@ -42,7 +42,7 @@ Using agile project management, we were instructed to create an application with
 
 ## Tech/framework used:
 
-HTML, CSS, JavaScript, JQuery, Bootstrap
+HTML, CSS, JavaScript, [JQuery](https://releases.jquery.com/jquery/), [Bootstrap](https://getbootstrap.com/)
 
 ## APIs:
 
@@ -52,11 +52,11 @@ HTML, CSS, JavaScript, JQuery, Bootstrap
 
 ## Group 9 Team Members: 
 
-* Isaac Gonzalez (@IsaacAGonzalez)
+* Isaac Gonzalez ([@IsaacAGonzalez](https://github.com/IsaacAGonzalez))
 
-* Christen Lorber (@cmarielorber)
+* Christen Lorber ([@cmarielorber](https://github.com/cmarielorber))
 
-* Louis Yoon (@louyoon89)
+* Louis Yoon ([@louyoon89](https://github.com/louyoon89))
 
 ## Successes:
 
