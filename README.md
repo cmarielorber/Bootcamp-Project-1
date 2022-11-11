@@ -6,11 +6,14 @@ University of California San Diego Cohort 2022
 
 ## Project Description:
 
-So-Cal Brew Hopper is an interactive tool that allows the User to search for desired breweries in the San Diego area and turn their destination into a custom User bucket list. This will allow the User to actively track which breweries they have yet to visit, as well as remove them once their visit is completed. If the User is looking to stay in for the night, the app provides a featured cocktail recipe.
+As a user, I want to search for breweries using names and locations to create a bucketlist with my desired destinations. I want my bucketlist attached to the same application with selected brewery names and be able to remove breweries from my list after my destination visit.  I want to see my saved bucketlist when I revisit the application at a later date.
+
+We present, So-Cal Brew Hopper. brew Hopper is an interactive tool that allows our user to search for desired breweries in the San Diego area and turn their destination into a custom user bucket list at the top of the site using a toggle button. This will allow the user to actively track which breweries they have yet to visit, as well as remove them once their visit is completed. If the user is looking to stay in for the night, the app also provides a featured cocktail recipe.
 
 ![isaacagonzalez github io_Bootcamp-Project-1_ open shot](https://user-images.githubusercontent.com/109984761/201198742-559e3884-6b99-41bd-b279-6ca82264025c.png)
 
-![isaacagonzalez github io_Bootcamp-Project-1_ bucketlist](https://user-images.githubusercontent.com/109984761/201198755-3ca8622b-de34-47c5-a3a4-de8229b5810c.png)
+![isaacagonzalez github io_Bootcamp-Project-1_ bucketlist](https://user-images.githubusercontent.com/109984761/201263078-73738eac-4235-4583-b68d-1b46315dff8d.png)
+
 
 ## User Instruction:
 
@@ -60,7 +63,7 @@ HTML, CSS, JavaScript, [JQuery](https://releases.jquery.com/jquery/), [Bootstrap
 
 ## Successes:
 
-Worked as a team.
+Worked as a communicative and supportive team.
 
 ## Demo & Link:
 
