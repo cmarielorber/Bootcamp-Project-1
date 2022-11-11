@@ -73,8 +73,14 @@ const bucketListRefresh = function() {
 
 const searchBrewery = function () {
   document.getElementById("tableBrew").setAttribute("class", "table");
+  document.getElementById("brew-table-body").innerHTML = null;
   let searchTerm = document.getElementById("usrSearch").value;
-  console.log(searchTerm)
+  let searchLocation = document.getElementById("usrLocation").value;
+  console.log(searchLocation);
+  if (searchLocation == '') {
+    searchLocation = 'San Diego';
+  }
+  console.log(searchLocation);
 
   let SDfetchRequest
 
@@ -91,7 +97,7 @@ const searchBrewery = function () {
   };
 
   fetch(
-    `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?&categories=breweries&location=san diego&term=${searchTerm}`,
+    `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?&categories=breweries&location=${searchLocation}&term=${searchTerm}`,
     requestOptions
   )
     .then((response) => response.text())

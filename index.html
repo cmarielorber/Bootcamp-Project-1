@@ -128,7 +128,7 @@
                 <input id="usrSearch" class="form-control me-2 text-center" type="search" style="width: 50%"
                   placeholder="Brewery Name (Optional)" aria-label="Search" />
                 <input id="usrLocation" class="form-control me-2 text-center" type="search" style="width: 50%"
-                  placeholder="City/Zipcode" aria-label="Search" />
+                  placeholder="City/Zipcode (Default: San Diego)" aria-label="Search" />
                 <button id="searchBrewbtn" class="btn btn-outline-light text-center justify-content-center"
                   onclick="searchBrewery()" type="button">Brew Me</button>
               </form>
@@ -138,7 +138,7 @@
       </card>
     </article>
 
-    <table id="tableBrew" class="table d-none mb-0" style="background-color: #000; color: #fff; margin-bottom: 0;">
+    <table id="tableBrew" class="table d-none" style="background-color: #000; color: #fff; margin-bottom: 0;">
       <thead>
         <tr>
           <th scope="col">Brewery Name</th>
