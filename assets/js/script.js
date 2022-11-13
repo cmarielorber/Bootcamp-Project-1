@@ -115,6 +115,7 @@ const searchBrewery = function () {
         brewLink.setAttribute("href", business.url);
         brewLink.setAttribute("target", "_blank");
         brewLink.appendChild(document.createTextNode("Link"));
+        brewLink.classList.add("brewLinkStyle");
         brewURL.appendChild(brewLink);
         brewRow.appendChild(brewURL);
 
