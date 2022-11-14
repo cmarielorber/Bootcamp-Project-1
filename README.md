@@ -70,8 +70,6 @@ HTML, CSS, [Canva](https://www.canva.com/), JavaScript, [JQuery](https://release
 Worked as a communicative and supportive team to create a responsive application.
 ## Demo & Link:
 
-*DEMO HERE*
-
 [So-Cal Brew Hopper](https://isaacagonzalez.github.io/Bootcamp-Project-1/)
 
 [So-Cal Brew Hopper Presentation](https://docs.google.com/presentation/d/1AG9MXBHcwNv7QvGwzCMGrs-qU3t_gmbevpuajOwpsOE/edit?usp=sharing)
