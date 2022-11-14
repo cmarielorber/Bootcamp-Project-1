@@ -37,8 +37,10 @@ const bucketListRefresh = function () {
   for (let i = 0; i < getBrews.length; i++) {
     let li = document.createElement("li");
     let btn = document.createElement("button");
+    li.classList.add("listSpace");
     li.appendChild(document.createTextNode(getBrews[i]));
     btn.appendChild(document.createTextNode("X"));
+    btn.classList.add("removeBtn");
     btn.addEventListener("click", function () {
       let brewInd = i;
       let brewsArray = getBrews;
