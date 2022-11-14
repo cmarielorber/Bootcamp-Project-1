@@ -10,9 +10,11 @@ As a user, I want to search for breweries using names and locations to create a 
 
 We present, So-Cal Brew Hopper. brew Hopper is an interactive tool that allows our user to search for desired breweries in the San Diego area and turn their destination into a custom user bucket list at the top of the site using a toggle button. This will allow the user to actively track which breweries they have yet to visit, as well as remove them once their visit is completed. If the user is looking to stay in for the night, the app also provides a featured cocktail recipe.
 
-![isaacagonzalez github io_Bootcamp-Project-1_ open shot](https://user-images.githubusercontent.com/109984761/201198742-559e3884-6b99-41bd-b279-6ca82264025c.png)
+![_C__Users_chris_Desktop_Code_Projects_Bootcamp-Project-1_index html with modal](https://user-images.githubusercontent.com/109984761/201578257-0ef033e8-b8a5-4cf1-8116-5861cadd909b.png)
 
-![isaacagonzalez github io_Bootcamp-Project-1_ bucket](https://user-images.githubusercontent.com/109984761/201271252-250f29ff-ad42-4969-ad60-7fd3734dac4a.png)
+![_C__Users_chris_Desktop_Code_Projects_Bootcamp-Project-1_index html bucket](https://user-images.githubusercontent.com/109984761/201578035-9db7e536-e48a-4d75-ae13-5ae46401ad57.png)
+
+![_C__Users_chris_Desktop_Code_Projects_Bootcamp-Project-1_index html full with table](https://user-images.githubusercontent.com/109984761/201578336-658f2cc2-d86d-47d5-93ca-a30235d80686.png)
 
 
 ## User Instruction:
@@ -45,13 +47,13 @@ Using agile project management, we were instructed to create an application with
 
 ## Tech/framework used:
 
-HTML, CSS, JavaScript, [JQuery](https://releases.jquery.com/jquery/), [Bootstrap](https://getbootstrap.com/)
+HTML, CSS, [Canva](https://www.canva.com/), JavaScript, [JQuery](https://releases.jquery.com/jquery/), [Bootstrap](https://getbootstrap.com/), [Postman](https://www.postman.com/)
 
 ## APIs:
 
 * [The Cocktail DB](https://www.thecocktaildb.com/) - An open, crowd-sourced database of drinks and cocktails.
 
-* [Yelp Fusion](https://api.yelp.com/) - Delivers current local data using carious restaurant attributes.
+* [Yelp Fusion](https://api.yelp.com/) - Delivers current local data using various restaurant attributes.
 
 ## Group 9 Team Members: 
 
@@ -63,11 +65,12 @@ HTML, CSS, JavaScript, [JQuery](https://releases.jquery.com/jquery/), [Bootstrap
 
 ## Successes:
 
-Worked as a communicative and supportive team.
-
+Worked as a communicative and supportive team to create a responsive application.
 ## Demo & Link:
 
 *DEMO HERE*
 
 [So-Cal Brew Hopper](https://isaacagonzalez.github.io/Bootcamp-Project-1/)
+
+[So-Cal Brew Hopper Presentation](https://docs.google.com/presentation/d/1AG9MXBHcwNv7QvGwzCMGrs-qU3t_gmbevpuajOwpsOE/edit?usp=sharing)
 
