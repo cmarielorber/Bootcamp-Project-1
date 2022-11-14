@@ -1,23 +1,26 @@
-const dailyRecipeEl = document.getElementById("dailyRecipe");
-let recipe;
+const dailyRecipeEl = document.getElementById("dailyRecipe"); //get HTML Element where the recipe will go
+let recipe; //define blank variable to be filled by fetch request later
+//make fetch header options
 let requestOptions = {
   method: "GET",
   redirect: "follow",
 };
 
+//wrap the main parts of the script in a function so it can be called with the HTML 'onclick' attribute
 function getCocktailRecipe() {
   fetch(
     "https://cors-anywhere.herokuapp.com/www.thecocktaildb.com/api/json/v1/1/random.php?a=Alcoholic",
     requestOptions
-  )
-    .then((response) => response.json())
+  ) //fetch request to cocktail database
+    .then((response) => response.json()) //parse response into JSON
     .then((result) => {
-      recipe = result.drinks[0];
-      publishRecipe(recipe);
+      recipe = result.drinks[0]; //saving only the first random recipe
+      publishRecipe(recipe); //publish function that pushes the recipe to the HTML
     })
     .catch((error) => console.log("error", error));
 }
 
+//creates the HTML elements and adds the recipe content, then appends to the existing HTML
 function publishRecipe(input) {
   dailyRecipeEl.innerHTML = null;
   let drinkName = input.strDrink;

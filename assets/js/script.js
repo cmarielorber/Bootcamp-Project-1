@@ -12,8 +12,6 @@ function removeDuplicates(arr) {
 //Adds to local storage
 const addBrewery = function (name) {
   let storedBrews = [];
-  console.log(localStorage.storedBrews);
-
   if (localStorage.storedBrews == undefined) {
     storedBrews.push(name);
   } else {
@@ -21,7 +19,6 @@ const addBrewery = function (name) {
     storedBrews.push(name);
   }
   storedBrews = removeDuplicates(storedBrews);
-  console.log(storedBrews);
   localStorage["storedBrews"] = JSON.stringify(storedBrews);
 
   bucketListRefresh();
@@ -64,18 +61,16 @@ const searchBrewery = function () {
   let searchLocation = document.getElementById("usrLocation").value;
   let SDfetchRequest;
 
-  console.log(searchLocation);
   if (searchLocation == "") {
     searchLocation = "San Diego";
   }
-  console.log(searchLocation);
 
-  var myHeaders = new Headers();
+  let myHeaders = new Headers();
   myHeaders.append(
     "Authorization",
     "Bearer d-Zk9Nv2t5lmfuhdEBns4h0UgeAFRUV3-eubcRfjSaPKo5aFhZSi_8qfL7xtTsYghIBiwSmEvaA-yZ0L83ac-wgfOQST-XQqCJ0D7QCKPosrrFnLQu0rL0iK9TVjY3Yx"
   );
-  var requestOptions = {
+  let requestOptions = {
     method: "GET",
     headers: myHeaders,
     redirect: "follow",
@@ -88,7 +83,6 @@ const searchBrewery = function () {
     .then((response) => response.text())
     .then((result) => {
       SDfetchRequest = JSON.parse(result);
-      console.log(SDfetchRequest.businesses);
 
       for (i = 0; i < SDfetchRequest.businesses.length; i++) {
         let business = SDfetchRequest.businesses[i];
