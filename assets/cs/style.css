@@ -81,3 +81,27 @@ body {
 .brewLinkStyle {
     color: var(--brew)
 }
+
+@media screen and  (max-width: 1029px) {
+    .navbar-brand  {
+        font-size: 60px;
+    };
+}
+
+@media screen and  (max-width: 834px) {
+    .navbar-brand  {
+        font-size: 35px;
+    };
+}
+
+@media screen and  (max-width: 640px) {
+    .navbar-brand  {
+        font-size: 20px;
+    };
+}
+
+@media screen and  (max-width: 480px) {
+    .navbar-brand #text {
+        font-size: 5px;
+    };
+}
