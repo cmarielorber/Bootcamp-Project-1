@@ -8,7 +8,7 @@ University of California San Diego Cohort 2022
 
 As a user, I want to search for breweries using names and locations to create a bucketlist with my desired destinations. I want my bucketlist attached to the same application with selected brewery names and be able to remove breweries from my list after my destination visit.  I want to see my saved bucketlist when I revisit the application at a later date.
 
-We present, So-Cal Brew Hopper. brew Hopper is an interactive tool that allows our user to search for desired breweries in the San Diego area and turn their destination into a custom user bucket list at the top of the site using a toggle button. This will allow the user to actively track which breweries they have yet to visit, as well as remove them once their visit is completed. If the user is looking to stay in for the night, the app also provides a featured cocktail recipe.
+We present, So-Cal Brew Hopper. Brew Hopper is an interactive tool that allows our user to search for desired breweries in the San Diego area and turn their destination into a custom user bucket list at the top of the site using a toggle button. This will allow the user to actively track which breweries they have yet to visit, as well as remove them once their visit is completed. If the user is looking to stay in for the night, the app also provides a featured cocktail recipe.
 
 Modal on load of page
 ![Screenshot of application](./assets/images/Screenshots/Modal.png)
